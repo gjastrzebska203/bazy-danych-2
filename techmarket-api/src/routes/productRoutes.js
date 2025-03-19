@@ -5,16 +5,16 @@ const productController = require("../controllers/productController");
 // pobieranie wszystkich produktów
 router.get("/", productController.getAllProducts);
 
-// pobieranie produktu po id
+// // pobieranie produktu po id
 router.get("/:id", productController.getProductById);
 
-// dodawanie nowego produktu
+// // dodawanie nowego produktu
 router.post("/", productController.addNewProduct);
 
-// aktualizacja produktu
+// // aktualizacja produktu
 router.put("/:id", productController.updateProduct);
 
-// usuwanie produktu
+// // usuwanie produktu
 router.delete("/:id", productController.deleteProduct);
 
 module.exports = router;
